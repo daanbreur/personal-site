@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		/* Refined magenta — light */
+		--bg: #f3edf3;
+		--panel: #ffffff;
+		--panel-2: #f7f0f7;
+		--border: #e0cfe1;
+		--text: #1a0a1c;
+		--muted: #7a5e7d;
+		--accent: #9f3da4;
+		--accent-soft: #7a2b7e;
+	}
+
+	.dark {
+		/* Refined magenta — dark (default) */
+		--bg: #140d15;
+		--panel: #1e131f;
+		--panel-2: #271829;
+		--border: #3a2540;
+		--text: #f6eef7;
+		--muted: #a98fab;
+		--accent: #cf6fd0;
+		--accent-soft: #e6c3e8;
+	}
+
+	/* Hidden easter-egg theme (phosphor) — applied via the ThemeSwitcher hook */
+	.phosphor {
+		--bg: #0a0f0a;
+		--panel: #0f180f;
+		--panel-2: #12210f;
+		--border: #1c3a22;
+		--text: #d6ffd9;
+		--muted: #6f9e78;
+		--accent: #4dff88;
+		--accent-soft: #8effb0;
+	}
+
+	html {
+		color-scheme: dark;
+	}
+
+	body {
+		background-color: var(--bg);
+		color: var(--text);
+	}
+}
